@@ -284,8 +284,7 @@ def adelantar_personaje(posicion_personaje: list) -> list:
         posicion_personaje[0] -= 200
 
     if posicion_personaje[0] >= 1020:
-        posicion_personaje[1] = 380
-        posicion_personaje[0] = 1020 
+        posicion_personaje = [1020, 380]
 
     return posicion_personaje
 
@@ -308,6 +307,10 @@ def retrodecer_personaje(posicion_personaje: list) -> list:
 
     if posicion_personaje[0] < 300:
         posicion_personaje = [220, 280]
+    
+    elif posicion_personaje[0] > 1020:
+
+        posicion_personaje = [1020, 280]
 
     return posicion_personaje
 

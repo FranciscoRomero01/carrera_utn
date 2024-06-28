@@ -65,22 +65,22 @@ score_surface = actualizar_puntaje(score, font_3)
 
 
 # Definir la imagen
-img = pygame.image.load("Clase 8\carrera_utn\Logo.png")
+img = pygame.image.load("Logo.png")
 picture = pygame.transform.scale(img, [300, 200])
 
 # Definir la imagen
-img_personajes = pygame.image.load("Clase 8\carrera_utn\Personaje.png")
+img_personajes = pygame.image.load("Personaje.png")
 picture_personaje = pygame.transform.scale(img_personajes, [40, 80])
 
 # Definir la imagen
-img_flecha = pygame.image.load("Clase 8/carrera_utn/Flecha.png")
+img_flecha = pygame.image.load("Flecha.png")
 picture_flecha = pygame.transform.scale(img_flecha, [100, 40])
 
 # Definir la imagen
-img_flecha_abajo = pygame.image.load("Clase 8/carrera_utn/Flecha_abajo.png")
+img_flecha_abajo = pygame.image.load("Flecha_abajo.png")
 picture_flecha_abajo = pygame.transform.scale(img_flecha_abajo, [80, 100])
 
-img_utn = pygame.image.load("Clase 8/carrera_utn/UTN.png")
+img_utn = pygame.image.load("UTN.png")
 picture_utn = pygame.transform.scale(img_utn, [140, 80])
 
 
@@ -225,6 +225,7 @@ while True:
     # Mostrar el mensaje temporal
     dibujar_texto(mensaje_temporal, font, BLANCO, screen, mensaje_temporal_pos)
 
+    print(posicion_personaje)
 
     posicion_personaje = caminar_casilla_especial(posicion_personaje)
 
